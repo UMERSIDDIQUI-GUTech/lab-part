@@ -1,38 +1,129 @@
-.App {
+/* App.css */
+
+/* General body styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f7fa;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container for the dashboard */
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 20px;
+}
+
+/* Section for each component */
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Header for the dashboard */
+h1 {
+  font-size: 36px;
+  color: #2c3e50;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 30px;
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Container for Userinfo Component */
+.userinfo-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Styling for the user's name */
+.userinfo-container p:first-child {
+  font-size: 22px;
+  font-weight: bold;
+  color: #2980b9;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Styling for the other information */
+.userinfo-container p {
+  font-size: 16px;
+  color: #34495e;
+  margin: 5px 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* General container for the Management Component */
+.management-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Styling for the pic class in the management section */
+.pic {
+  width: 80px; /* Set the width of the image */
+  height: 80px; /* Set the height of the image */
+  border-radius: 50%; /* Make the image circular */
+  margin-bottom: 10px; /* Add some space below the image */
+  border: 2px solid #66ff99; /* Add a bright green border */
+  box-shadow: 0 4px 12px rgba(0, 255, 102, 0.3); /* Add a glowing shadow */
+  object-fit: cover; /* Ensure the image maintains its aspect ratio */
+}
+
+/* Styling for the message text */
+.message {
+  font-size: 16px;
+  color: #34495e;
+  margin-bottom: 10px;
+}
+
+/* General container for the Statistics Component */
+.statistics-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for each statistic item */
+.stat-item {
+  background-color: #ecf0f1;
+  padding: 15px;
+  font-size: 18px;
+  color: #2c3e50;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Hover effect for statistics items */
+.stat-item:hover {
+  background-color: #3498db;
   color: white;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+/* Styling for the percentage bar container */
+.percentage-bar-background {
+  background-color: #ddd;
+  height: 20px;
+  border-radius: 5px;
+  margin-top: 10px;
+  width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Styling for the percentage bar */
+.percentage-bar {
+  height: 100%;
+  background-color: #4CAF50; /* Green color for the bar */
+  border-radius: 5px;
+  transition: width 0.5s ease; /* Smooth transition for width change */
 }
